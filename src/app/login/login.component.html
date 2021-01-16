@@ -1,0 +1,78 @@
+<body class="background">
+
+
+    <section class="background">
+
+        <mat-card>
+
+            <mat-card-title>Login</mat-card-title>
+
+            <mat-card-content>
+                <div>
+                    <form [formGroup]="loginForm">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Username</mat-label>
+                            <input matInput placeholder="Username" type="text" formControlName="username">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Password</mat-label>
+                            <input matInput placeholder="Password" type="password" formControlName="password">
+                        </mat-form-field>
+                    </form>
+                </div>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-raised-button color="primary" (login)="login()">Login</button>
+                <button mat-raised-button color="primary">Cadastre-se</button>
+            </mat-card-actions>
+
+        </mat-card>
+
+    </section>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="bloco">
+    <div class="cabeçalho">
+        <img src="assets/img/logo - Contacttura.png" alt="" class="logo-login">
+    </div>
+    <form class="form-login ">
+        <div>
+            <label>Username</label>
+            <input type="text" placeholder="Username">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" placeholder="Password">
+        </div>
+        <input type="button" value="Cadastre-se">
+        <input type="button" value="Enviar">
+    </form>
+</div> -->
